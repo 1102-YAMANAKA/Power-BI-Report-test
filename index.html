@@ -1,35 +1,28 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Power BI レポート</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Monster Report</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-        iframe {
-            border: none;
-        }
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden; /* スクロールバー非表示 */
+      }
+      iframe {
+        width: 100vw;
+        height: calc(100vh - 4px); /* わずかに小さくして上下スクロール防止 */
+        border: none;
+        display: block;
+      }
     </style>
-</head>
-<body>
-    <h1>2月21日(金) 焼肉伝説バリバリ</h1>
+  </head>
+  <body>
     <iframe
-        title="Power BI レポート"
-        width="800"
-        height="600"
-        src="https://app.powerbi.com/view?r=eyJrIjoiMmJkZTg5MDAtNmE0YS00MWU3LWE1NTgtNGM0NGE4Y2FkZDNkIiwidCI6IjFjZGUwOGYyLTFhNzQtNGE4OC05ZGQ0LTg2YTNhYTM1YzA4ZiJ9"
-        frameborder="0"
-        allowFullScreen="true">
+      title="Monster_Import"
+      src="https://app.powerbi.com/view?r=eyJrIjoiOWVkMDRiMGUtNjI4OC00NGI4LWE4NzQtNTVlYTlmODYyMmE1IiwidCI6IjFjZGUwOGYyLTFhNzQtNGE4OC05ZGQ0LTg2YTNhYTM1YzA4ZiJ9"
+      allowFullScreen="true">
     </iframe>
-</body>
+  </body>
 </html>
